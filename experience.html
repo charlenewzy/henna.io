@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home - Henna Art</title>
+<style>
+
+/***HEADER***/
+.header {
+  background-image: url('images/headerbackground.jpg');
+  padding: 30px;
+  text-align: center;
+  color: #462255;
+}
+
+/***BODY***/
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #313b72;
+  background-color: #F9F1F0;
+}
+a:visited {
+  color: #8C3C6A;
+}
+
+/***IMAGE GRID***/
+.columngrd {
+  float: left;
+  width: 33.33%;
+}
+.rowgrd::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/***BUTTON***/
+
+.button {
+  background-color: #F5A65B;
+  border: none;
+  color: #394053;
+  padding: 22px 50px;
+  cursor: pointer;
+  font-size: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button:hover {
+  background-color: #394053;
+  color: white;
+}
+
+/***COLUMNS***/
+.column {
+  float: left;
+  width: 50%;
+  padding: 50px;
+  color: #394053;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  color: #394053;
+}
+
+/***IMAGES***/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: autopx;
+  width: 50px;
+  height: 50px;
+}  
+
+/***NAVIGATION BAR***/
+#navbar {
+  overflow: hidden;
+  background-color: #462255;
+  color: #FFFFFF;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar a:hover {
+  background-color: #f7b2ad;
+  color: #313B72;
+}
+#navbar a.active {
+  background-color: #f7b2ad;
+  color: black;
+}
+
+.content {
+  padding: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/***FOOTER***/
+.footer {
+  text-align: center;
+  background-color: #DE5055;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px;  
+  overflow: hidden;
+}
+.footer a {
+  text-align: center;
+  background-color: #DE5055;
+  color: white;
+  padding: 10px 10px;  
+  overflow: hidden;
+}
+
+/***IMAGES***/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}  
+
+
+/***TABLE***/
+table, th, td {
+  border:3px solid;
+  border-color: #313b72;
+  text-align: center;
+  padding: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2 style="font-size:40px">HENNA ART</h2>
+</div>
+
+<div id="navbar">
+  <a href="index.html">HOME</a>
+  <a href="tutorial.html">TUTORIAL</a>
+  <a href="experience.html">MY HENNA EXPERIENCE</a>
+  <a href="wearableart.html">WEARBLE ART</a>
+</div>
+
+<h2 style="text-align:center"><strong>My Henna Experience</strong></h2>
+<p style="text-align: center">My first henna experience was actually planning and implementing one for my hall residents in 2020! <br> The workshop was an hour long, repeated once to accommodate many residents while still adhering to safe-distancing  measures. <br> It started off with a short educational talk by a student expert, followed by the henna drawing activity itself. <br> Many of us practiced drawing on paper first, then on blown-up latex gloves. We did patch testing before we decorated our hands with the henna paste. <br>It was a fun to see everyone having an opportunity to express their creativity!</p>
+<div class="rowgrd"; style="margin-bottom: 100px;margin-right: 100px;margin-left: 100px">  
+  <div class="columngrd">
+   <img src="images/drawing.jpg" alt="Drawing" style="width:100%;height:440px">
+  </div>
+  <div class="columngrd">
+    <img src="images/hennafriends.jpg" alt="Us posing" style="width:100%">
+  </div>
+  <div class="columngrd">
+    <img src="images/testing.jpg" alt="Testing" style="width:100%;height:440px">
+  </div>
+</div>
+<div class="footer">
+ <a>Done by: Charlene Wang &copy; <a href="https://www.youtube.com/watch?v=C1_jYOa3Juc">More Henna</a></a>
+</div>
+
+<script>
+/***NAVIGATION BAR***/
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+</body>
+</html>

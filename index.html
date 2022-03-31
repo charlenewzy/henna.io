@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home - Henna Art</title>
+<style>
+
+/***HEADER***/
+.header {
+  background-image: url('images/headerbackground.jpg');
+  padding: 30px;
+  text-align: center;
+  color: #462255;
+}
+
+/***BODY***/
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #313b72;
+  background-color: #F9F1F0;
+}
+a:visited {
+  color: #8C3C6A;
+}
+
+/***IMAGE GRID***/
+.columngrd {
+  float: left;
+  width: 33.33%;
+}
+.rowgrd::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/***BUTTON***/
+
+.button {
+  background-color: #F5A65B;
+  border: none;
+  color: #394053;
+  padding: 22px 50px;
+  cursor: pointer;
+  font-size: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button:hover {
+  background-color: #394053;
+  color: white;
+}
+
+/***COLUMNS***/
+.column {
+  float: left;
+  width: 50%;
+  padding: 50px;
+  color: #394053;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  color: #394053;
+}
+
+/***IMAGES***/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: autopx;
+  width: 50px;
+  height: 50px;
+}  
+
+/***NAVIGATION BAR***/
+#navbar {
+  overflow: hidden;
+  background-color: #462255;
+  color: #FFFFFF;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar a:hover {
+  background-color: #f7b2ad;
+  color: #313B72;
+}
+#navbar a.active {
+  background-color: #f7b2ad;
+  color: black;
+}
+
+.content {
+  padding: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/***FOOTER***/
+.footer {
+  text-align: center;
+  background-color: #DE5055;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px;  
+  overflow: hidden;
+}
+.footer a {
+  text-align: center;
+  background-color: #DE5055;
+  color: white;
+  padding: 10px 10px;  
+  overflow: hidden;
+}
+
+/***IMAGES***/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}  
+
+
+/***TABLE***/
+table, th, td {
+  border:3px solid;
+  border-color: #313b72;
+  text-align: center;
+  padding: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2 style="font-size:40px">HENNA ART</h2>
+</div>
+
+<div id="navbar">
+  <a href="index.html">HOME</a>
+  <a href="tutorial.html">TUTORIAL</a>
+  <a href="experience.html">MY HENNA EXPERIENCE</a>
+  <a href="wearableart.html">WEARBLE ART</a>
+</div>
+
+<div style="display:flex;background-color:#93D7BF">
+<h5 style="flex:1;text-align:center;color:#394053"><a href="#whatishenna">What is Henna</a></h5>
+<h5 style="flex:1;text-align:center;color:#394053"><a href="#hennaplant">The Henna Plant</a></h5>
+<h5 style="flex:1;text-align:center;color:#394053"><a href="#benefits">Benefits</a></h5>
+<h5 style="flex:1;text-align:center;color:#394053"><a href="#variations">Henna Variations</a></h5>
+</div>
+
+<div class="content" style="background-color: #cff27e" id="whatishenna"> 
+  <h2 style="text-align:center"><strong>WHAT IS HENNA</strong></h3>
+  <img src="images/hennaplant.jpg" alt="Henna Plant" style="display: block;margin-left: auto;margin-right: auto;width: 50%">
+  <p style="text-align:center"> The art of henna (called mehndi or mehendi in Hindi & Urdu languages) has been practiced for over 5000 Origin of Hennayears in Pakistan, India, Africa and the Middle East. Some documentation dates it to over 9000 years old.  Because henna has natural cooling properties, people of the desert, for centuries, have been using henna to help control their body temperature.  They would make a paste from the crushed dried leaves of the henna plant and soak their palms and soles of the feet in it to get a cooling affect.  The cooling sensation was felt throughout the body for as long as the henna stain remained on their skin.  Initially, as the stain faded away, it left patterns on the skin's surface which led to ideas of making designs for decorative purposes.  In the ancient Egyptian times even mummies wore henna designs and it is documented that Cleopatra herself used henna for decorative purposes.</p>
+  <br><p style="text-align:center">Henna was not only a popular accessory for the rich but the poor, who could not afford jewelry, used it to decorate their bodies as well.</p>
+  <img src="images/history.jpg" alt="History" style="display: block;margin-left: auto;margin-right: auto;width: 20%">
+</div>
+
+
+<div class="row" style="background-color: #F0E2E7" id="hennaplant">  
+  <div class="column">
+   <h2 class="header"><strong>THE HENNA PLANT</strong></h2>
+   <p>The henna plant is a flowering plant that grows best in a warm climate of up to <b>120F degrees</b>. Inversely, the henna plant also grows in temperatures <b>below 50F degrees</b>.
+   <br><br> The pigment color varies in each tropical region and the sizes of the plant as well by approximately <b>2-3 cm in height</b>. The henna plant <b>contains an active compound "lawsone"</b>, which is an orange-reddish dye that binds with keratin (a protein) in our skin to stain it.
+   <br><br> The stain of the henna varies <b>from deep burgundy to pale orange depending</b> on the quality of the leaves and what mixture you used to make the henna paste. Henna grown in hot and dry weather will stain the best.</p>
+   </div>
+  <div class="column">
+   <img src="images/hennatree.jpg" alt="Henna Tree" title="Henna Tree">
+  </div>
+</div>
+
+<div class="row" style="background-color: #cff27e" id="benefits">  
+  <div class="column">
+   <h2 class="header"><strong>BENEFITS OF HENNA</strong></h2>
+   <ul>
+   <li><i>Hair Color</i></li>
+   <li><i>Hair Health</i></li>
+   <li><i>Reduced Hair Loss</i></li>
+   <li><i>Improved Nail Quality</i></li>
+   <li><i>Anti-aging Properties</i></li>
+   <li><i>Wound Healing</i></li>
+   <li><i>Fever Cure</i></li>
+   </ul>
+   <a href="https://myrepublica.nagariknetwork.com/mycity/news/12-impressive-benefits-of-henna-for-hair-and-skin#:~:text=Although%20the%20antioxidant%20capacity%20of,of%20scars%20and%20other%20blemishes."><button class="button">More benefits in detail!</button></a>
+   </div>
+  <div class="column">
+   <img src="images/hennabenefits.jpg" alt="Henna Tree" title="Henna Tree">
+  </div>
+</div>
+
+<div class="content" style="background-color: #F0E2E7" id="variations">
+  <h2 style="text-align:center"><strong>HENNA VARIATION FOR HAIR</strong></h3>
+  <br>
+  <table style="width:100%">
+  <tr>
+    <td><b>NATURAL</b></td>
+    <td><b>NEUTRAL</b></td>
+    <td><b>BLACK</b></td>
+  </tr>
+  <tr>
+    <td>Natural Henna (Lawsonia inermis) produces a rich brown-red stain when it is first applied and will last for about a week on your skin. It is pure henna made from the leaves of the Lawsonia plant.</td>
+    <td>Neutral henna (Cassia Obovata) is not pure henna powder. In fact, it is a totally different plant called Senna Italica. Both natural and neutral henna plants look alike but their properties and molecular consistency vary. Neutral henna on its own does not change your hair color.</td>
+    <td>Black henna is a completely different thing, derived from Indigo, natural henna, and other unlisted dyes or chemicals such as para-phenylenediamine (PPD). This dye is mostly used to color fabric but as it has a more darkish color, it is being used by manufacturers to create henna tattoo cones and hair dye.</td>
+  </tr>
+</table>
+  <br>
+ <center>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/PvsvTRm2wjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </center>
+</div>
+
+<div class="footer">
+ <a>Done by: Charlene Wang &copy; <a href="https://www.youtube.com/watch?v=C1_jYOa3Juc">More Henna</a></a>
+</div>
+
+<script>
+/***NAVIGATION BAR***/
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+</body>
+</html>

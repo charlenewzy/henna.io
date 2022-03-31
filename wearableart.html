@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home - Henna Art</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #313b72;
+}
+
+/***HEADER***/
+.header {
+  background-image: url('images/headerbackground.jpg');
+  padding: 30px;
+  text-align: center;
+  color: #462255;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 33.3333%; 
+  flex: 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/***NAVIGATION BAR***/
+#navbar {
+  overflow: hidden;
+  background-color: #462255;
+  color: #FFFFFF;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#navbar a:hover {
+  background-color: #f7b2ad;
+  color: #313B72;
+}
+#navbar a.active {
+  background-color: #f7b2ad;
+  color: black;
+}
+
+.content {
+  padding: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/***FOOTER***/
+.footer {
+  text-align: center;
+  background-color: #DE5055;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px;  
+  overflow: hidden;
+}
+.footer a {
+  text-align: center;
+  background-color: #DE5055;
+  color: white;
+  padding: 10px 10px;  
+  overflow: hidden;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2 style="font-size:40px">HENNA ART</h2>
+</div>
+
+<div id="navbar">
+  <a href="index.html">HOME</a>
+  <a href="tutorial.html">TUTORIAL</a>
+  <a href="experience.html">MY HENNA EXPERIENCE</a>
+  <a href="wearableart.html">WEARBLE ART</a>
+</div>
+
+<div class="content" style="background-color: #F0E2E7">
+  <h2 style="text-align:center"><strong>HENNA ARTISTS IN SINGAPORE!</strong></h2>
+  <p style="text-align:center">You’ll be sure to find a style that speaks to you and your aesthetic through a list of noteworthy Singapore henna artists on Instagram.</p>
+  <p style="text-align:center; font-size: 20px"><i> Click the images to visit their Instagram pages!</i></p>
+  <div class="row">
+  <div class="column">
+    <a href=https://www.instagram.com/syraskins/><img src="images/syraskins.jpg"></a>
+    <a href=https://www.instagram.com/qfcreation/><img src="images/qfcreation.jpg"></a>
+    <a href=https://www.instagram.com/artsyatelier/><img src="images/artsyatelier.jpg"></a>
+    <a href=https://www.instagram.com/zahrabridalhenna/><img src="images/zahrabridalhenna.jpg"></a>
+  </div>
+  <div class="column">
+    <a href=https://www.instagram.com/hennabymon/><img src="images/hennabymon.jpg"></a>
+    <a href=https://www.instagram.com/henn.drawn/><img src="images/henndrawn.jpg"></a>
+    <a href=https://www.instagram.com/papermarkings/><img src="images/papermarkings.jpg"></a>
+    <a href=https://www.instagram.com/nxedhenna/><img src="images/nxedhenna.jpg"></a>
+    <a href=https://www.instagram.com/fauzellaartistry/><img src="images/fauzellaartistry.jpg"></a>
+  </div>
+  <div class="column">
+    <a href=https://www.instagram.com/khairhenna/><img src="images/khairhenna.jpg"></a>
+    <a href=https://www.instagram.com/thehennastory/><img src="images/thehennastory.jpg"></a>
+    <a href=https://www.instagram.com/heavenly_henna/><img src="images/heavenlyhenna.jpg"></a>
+    <a href=https://www.instagram.com/dishacreationz/><img src="images/dishacreationz.jpg"></a>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+ <a>Done by: Charlene Wang &copy; <a href="https://www.youtube.com/watch?v=C1_jYOa3Juc">More Henna</a></a>
+</div>
+
+<script>
+/***NAVIGATION BAR***/
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+</body>
+</html>
